@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "BasicCrud": {
+    "basic-crud": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "BasicCrud:build"
+            "browserTarget": "BasicCrud:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
